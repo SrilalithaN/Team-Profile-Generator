@@ -173,7 +173,7 @@ const addEmployee = () => {
 };
 
 const writeFile = (data) => {
-  fs.writeFile("dist/team.html", data, (err) => {
+  fs.writeFile("dist/index.html", data, (err) => {
     if (err) {
       console.log(err);
       return;
@@ -186,12 +186,12 @@ const writeFile = (data) => {
 };
 addManager()
   .then(addEmployee)
-  .then(teamArray => {
+  .then((teamArray) => {
     return generateHTML(teamArray);
   })
-  .then(pageHTML => {
+  .then((pageHTML) => {
     return writeFile(pageHTML);
   })
-  .catch(err => {
- console.log(err);
+  .catch((err) => {
+    console.log(err);
   });
