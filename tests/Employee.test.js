@@ -1,4 +1,4 @@
-const Employee = require("../lib/Employee.js");
+const Employee = require("./lib/Employee.js");
 
 describe("Employee", () => {
   it("Can instantiate Employee instance", () => {
@@ -49,4 +49,5 @@ describe("Employee", () => {
       expect(e.getRole()).toBe(testEmployee);
     });
   });
+
 })
