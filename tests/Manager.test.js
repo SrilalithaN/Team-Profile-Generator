@@ -16,7 +16,7 @@ describe("Manager", () => {
     it("Can get office number via getOffice()", () => {
       const testValue = 130;
       const e = new Manager("Jim", 100, "test@test.com", testValue);
-      expect(e.getOfficeNumber()).toBe(testValue);
+      expect(e.getOffice()).toBe(testValue);
     });
   });
 });
