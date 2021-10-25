@@ -1,5 +1,9 @@
+const generateHTML = require("./src/generateHTML");
 const inquirer = require("inquirer");
 const fs = require("fs");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 
 const teamArray = [];
 const addManager = () => {
@@ -23,7 +27,7 @@ const addManager = () => {
         message: "Please enter the manager's ID number:",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter the manager's ID!");
+            console.log("Please enter a valid manager ID!");
             return false;
           } else {
             return true;
@@ -39,7 +43,7 @@ const addManager = () => {
           if (valid) {
             return true;
           } else {
-            console.log("Please enter an email!");
+            console.log(" Please enter an valid email!");
             return false;
           }
         },
@@ -50,7 +54,7 @@ const addManager = () => {
         message: "Please enter the manager's office number",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter an office number!");
+            console.log("Please enter a valid office number!");
             return false;
           } else {
             return true;
