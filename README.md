@@ -20,7 +20,7 @@ This application was created to generate a team profile based on user input usin
 ## Usage
 
 - The following is the link to walk-through video demonstrates the usage of the applciation.</br>
-  ![Link to Demo](assets/demo.mp4)
+  [Link to Demo](assets/demo.mp4)
 
 ## Tests
 
