@@ -27,7 +27,7 @@ const addManager = () => {
         message: "Please enter the manager's ID number:",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter a valid manager ID!");
+            console.log("\n Please enter a valid manager ID!");
             return false;
           } else {
             return true;
@@ -43,7 +43,7 @@ const addManager = () => {
           if (valid) {
             return true;
           } else {
-            console.log(" Please enter an valid email!");
+            console.log("\n Please enter an valid email!");
             return false;
           }
         },
@@ -54,7 +54,7 @@ const addManager = () => {
         message: "Please enter the manager's office number",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter a valid office number!");
+            console.log("\n Please enter a valid office number!");
             return false;
           } else {
             return true;
@@ -88,7 +88,7 @@ const addEmployee = () => {
           if (nameInput) {
             return true;
           } else {
-            console.log("Please enter the employee's name");
+            console.log("\n Please enter the employee's name");
           }
         },
       },
@@ -98,7 +98,7 @@ const addEmployee = () => {
         message: "Please enter the Employee's ID number:",
         validate: (nameInput) => {
           if (isNaN(nameInput)) {
-            console.log("Please enter the employee's ID!");
+            console.log("\n Please enter a valid employee's ID!");
             return false;
           } else {
             return true;
@@ -114,7 +114,7 @@ const addEmployee = () => {
           if (valid) {
             return true;
           } else {
-            console.log("Please enter an email!");
+            console.log("\n Please enter a valid email!");
             return false;
           }
         },
@@ -130,7 +130,7 @@ const addEmployee = () => {
           if (nameInput) {
             return true;
           } else {
-            console.log("Please enter the employee's github username!");
+            console.log("\n Please enter the employee's github username!");
           }
         },
       },
@@ -145,7 +145,7 @@ const addEmployee = () => {
           if (nameInput) {
             return true;
           } else {
-            console.log("Please enter the intern's school!");
+            console.log("\n Please enter the intern's school!");
           }
         },
       },
@@ -193,9 +193,7 @@ addManager()
   .then((teamArray) => {
     return generateHTML(teamArray);
   })
-  .then((pageHTML) => {
-    return writeFile(pageHTML);
-  })
+ 
   .catch((err) => {
     console.log(err);
   });
