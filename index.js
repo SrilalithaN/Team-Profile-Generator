@@ -183,7 +183,7 @@ const writeFile = (data) => {
       return;
     } else {
       console.log(
-        "Your team profile has been successfully created! Please check out the team.html"
+        "Your team profile has been successfully created! Please check out the index.html"
       );
     }
   });
@@ -193,7 +193,9 @@ addManager()
   .then((teamArray) => {
     return generateHTML(teamArray);
   })
- 
+  .then((pageHTML) => {
+    return writeFile(pageHTML);
+  })
   .catch((err) => {
     console.log(err);
   });

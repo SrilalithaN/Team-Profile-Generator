@@ -10,6 +10,7 @@ This application was created to generate a team profile based on user input usin
 - [Usage](#Usage)
 - [Tests](#Tests)
 - [Assets](#Assets)
+- [Questions](#Questions)
 
 ## Installation
 
@@ -33,3 +34,9 @@ This application was created to generate a team profile based on user input usin
 
 - The following is the screenshot of the webpage generated
   ![](assets/page-screenshot.png)
+- The followings is the link to the deployed code : https://github.com/SrilalithaN/Team-Profile-Generator
+
+## Questions
+
+- If you have any questions please contact me at my github.
+- My github user-name is [SrilalithaN](https://github.com/SrilalithaN)
